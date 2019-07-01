@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="264e8b74-7571-4f91-a97b-ac374fb113df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/385415b2491a7a6c17e2a2d0b8be9cb0cc215237" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b6a4ec5946206af999ba4fc085218cf214097af" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71c31cfe9da9488dec211dc5addc292e7ab07769" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/8682d7ed5413bbd9ce6b4b23ea8f0202cfd37f3b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a99e5a6e2326d5a37cdb4147fa7eb2840eb261a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f95d8807e923ac6e8b651d1d05118681b0b9f998" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/SimulationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/SimulationInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/SimulationWithManualInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/SimulationOnPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/SimulationWithSeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/SimulationWithSeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Frame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Cell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simulation/SimulationWithManualInputs$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simulation/SimulationWithManualInputs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simulation/SimulationWithSeed.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simulation/SimulationWithSeed.class" afterDir="false" />
-    </list>
+    <list default="true" id="264e8b74-7571-4f91-a97b-ac374fb113df" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,11 +15,11 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="136">
               <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
@@ -65,13 +28,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+            <state relative-caret-position="171">
+              <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#mouseClicked#0;class#1063:1742" />
                 <element signature="method#paintComponent#0;class#Panel#0" />
+                <element signature="e#4082#4083#0" expanded="true" />
                 <element signature="e#4107#4108#0" expanded="true" />
+                <element signature="e#4523#4524#0" expanded="true" />
                 <element signature="e#4554#4555#0" expanded="true" />
               </folding>
             </state>
@@ -82,13 +46,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/simulation/SimulationOnPanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-              <folding>
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#1187#1306#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
-              </folding>
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -97,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/World.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="method#World#0;class#World#0" />
                 <element signature="method#initCells#0;class#World#0" />
@@ -151,6 +109,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,8 +164,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,7 +217,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24694377" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -389,7 +347,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="136">
           <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
@@ -397,7 +355,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/World.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="method#World#0;class#World#0" />
             <element signature="method#initCells#0;class#World#0" />
@@ -415,25 +373,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/simulation/SimulationOnPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#1187#1306#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-          </folding>
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        <state relative-caret-position="171">
+          <caret line="67" column="63" lean-forward="true" selection-start-line="67" selection-start-column="63" selection-end-line="67" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#mouseClicked#0;class#1063:1742" />
             <element signature="method#paintComponent#0;class#Panel#0" />
+            <element signature="e#4082#4083#0" expanded="true" />
             <element signature="e#4107#4108#0" expanded="true" />
+            <element signature="e#4523#4524#0" expanded="true" />
             <element signature="e#4554#4555#0" expanded="true" />
           </folding>
         </state>
