@@ -9,9 +9,6 @@ public class Cell {
         this.isAlive = isAlive;
     }
 
-    public Cell() {
-    }
-
     public boolean isAlive() {
         return isAlive;
     }

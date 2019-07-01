@@ -22,7 +22,7 @@ public class SimulationWithSeed implements SimulationInterface {
 
     public void initSimulation() {
         String newSeed =
-                "00000000000000000000000000000000000000-" +
+                        "00000000000000000000000000000000000000-" +
                         "00000000000000000000000001000000000000-" +
                         "00000000000000000000000101000000000000-" +
                         "00000000000001100000011000000000000110-" +
@@ -35,7 +35,7 @@ public class SimulationWithSeed implements SimulationInterface {
                         "00000000000000000000000000000000000000";
 
         world = new World(38, 11, newSeed);
-        frame = new Frame(380, 110, 11, 38, world);
+        frame = new Frame(380, 110, 38, 11);
         startTimer(initialTickDelay, tickDelay);
     }
 

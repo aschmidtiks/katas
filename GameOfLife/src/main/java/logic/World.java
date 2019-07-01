@@ -1,7 +1,6 @@
 package logic;
 
 public class World {
-
     private Cell[][] cellList;
     private int cellsPerColumn;
     private int cellsPerRow;
@@ -33,10 +32,9 @@ public class World {
         this.cellsPerColumn = cellList.length;
         this.cellsPerRow = cellList[0].length;
         setCellList(cellList);
-        //this.setNeighboursForAllCells(cellList);
     }
 
-    private void setCellList(Cell[][] tempListCell) {
+    public void setCellList(Cell[][] tempListCell) {
         this.cellList = tempListCell;
     }
 
@@ -65,7 +63,7 @@ public class World {
     public void generateNextGeneration() {
         Cell[][] cellList = getCellList();
         Cell[][] tempListCell = new Cell[cellList.length][cellList[0].length];
-        copyOfCellList(tempListCell);
+        tempListCell = copyOfCellList();
 
         for (int y = 1; y < cellsPerColumn - 1; y++) {
             for (int x = 1; x < cellsPerRow - 1; x++) {
@@ -81,15 +79,18 @@ public class World {
                 }
             }
         }
+        setCellList(tempListCell);
         setNeighboursForAllCells();
     }
 
-    private void copyOfCellList(Cell[][] tempListCell) {
+    public Cell[][] copyOfCellList() {
+        Cell[][] tempListCell = getCellList();
         for (int i = 0; i < cellList.length; i++) {
             for (int j = 0; j < cellList[0].length; j++) {
                 tempListCell[i][j] = cellList[i][j];
             }
         }
+        return tempListCell;
     }
 
     public void setNeighboursForAllCells() {
@@ -130,7 +131,7 @@ public class World {
         Cell[][] tempListCell = new Cell[cellsPerColumn][cellsPerRow];
         for (int y = 0; y < cellsPerColumn; y++) {
             for (int x = 0; x < cellsPerRow; x++) {
-                tempListCell[y][x] = new Cell();
+                tempListCell[y][x] = new Cell(false);
             }
         }
         return tempListCell;

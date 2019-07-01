@@ -1,5 +1,4 @@
-import simulation.SimulationWithManualInputs;
-import simulation.SimulationWithSeed;
+import gui.Frame;
 
 import java.awt.*;
 
@@ -8,7 +7,8 @@ public class Main {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 //new SimulationWithSeed();
-                new SimulationWithManualInputs();
+                //new SimulationOnPanel();
+                new Frame(1000, 800, 100, 80);
             }
         });
     }

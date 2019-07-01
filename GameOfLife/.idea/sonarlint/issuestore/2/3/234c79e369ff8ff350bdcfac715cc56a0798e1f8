@@ -1,2 +1,17 @@
 
-Wsquid:S2094"BRemove this empty class, write its code or make it an "interface".(ˆ…´¯
+osquid:S00116"RRename this field "COLUMNS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÛßüÿÿÿÿ
+Osquid:S1948",Make "simulation" transient or serializable.(­Øïóıÿÿÿÿ8·îÂìº-
+¤squid:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ˆ´€íº-
+Msquid:S1948"*Make "cellList" transient or serializable.(öÚùøÿÿÿÿ8¹”Œîº-
+Bsquid:S1659,"Declare "y" on a separate line.(¡Ê²‘şÿÿÿÿ8ˆ´€íº-
+¤squid:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8ˆ´€íº-
+Lsquid:S1948".Make "tempCellList" transient or serializable.(ãÒ»ç8ÿûºîº-
+qsquid:S00116"YRename this field "HEIGHT_OF_ROWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şƒÙ
+usquid:S00116"XRename this field "WIDTH_OF_ROWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë½ş©ÿÿÿÿÿ
+¤squid:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ˆ´€íº-
+gsquid:S00116"ORename this field "ROWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¡ÔÍ
+¤squid:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ˆ´€íº-
+Ÿsquid:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8ˆ´€íº-
+Ÿsquid:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ˆ´€íº-
+isquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(æáŠı8¢ÕÛïº-
+csquid:S1854v"@Remove this useless assignment to local variable "tempListCell".(”ñÄøÿÿÿÿ8Âåæïº-
