@@ -1,0 +1,21 @@
+
+nsquid:S3776:"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(š–Ñğşÿÿÿÿ
+Esquid:S1481")Remove this unused "main" local variable.(²Äˆİÿÿÿÿÿ
+†squid:S1319p"oThe type of the "hand" object should be an interface such as "List" rather than the implementation "ArrayList".(“®£
+Csquid:S1068",Remove this unused "highCard" private field.(¦Á 
+‹squid:S1319:"oThe type of the "hand" object should be an interface such as "List" rather than the implementation "ArrayList".(š–Ñğşÿÿÿÿ
+hsquid:S00117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÖÂA
+Fsquid:S1659"*Declare "PLAYER2CARDS" on a separate line.(‚İŸûüÿÿÿÿ
+Œsquid:S1319ˆ"oThe type of the "hand" object should be an interface such as "List" rather than the implementation "ArrayList".(µù¶¦ıÿÿÿÿ
+squid:S1319"pThe type of the "hand1" object should be an interface such as "List" rather than the implementation "ArrayList".(ÖŠşøÿÿÿÿ
+Csquid:S1172‚"+Remove this unused method parameter "hand".(ÆÁÒ©
+‡squid:S1319 "oThe type of the "hand" object should be an interface such as "List" rather than the implementation "ArrayList".(çÛƒè
+Gsquid:S1481r"0Remove this unused "pairCounter" local variable.(äÚÿŒ
+‡squid:S1319‚"oThe type of the "hand" object should be an interface such as "List" rather than the implementation "ArrayList".(ÆÁÒ©
+isquid:S3776­"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(„×í1
+csquid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(ïÿ§
+Œsquid:S1319’"oThe type of the "hand" object should be an interface such as "List" rather than the implementation "ArrayList".(Ç¨™Öúÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”âË¾
+Hsquid:S1172ˆ"+Remove this unused method parameter "hand".(µù¶¦ıÿÿÿÿ
+Tsquid:S1854"8Remove this useless assignment to local variable "main".(²Äˆİÿÿÿÿÿ
+squid:S1319"pThe type of the "hand2" object should be an interface such as "List" rather than the implementation "ArrayList".(ÖŠşøÿÿÿÿ
