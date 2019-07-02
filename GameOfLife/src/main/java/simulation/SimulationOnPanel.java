@@ -17,7 +17,6 @@ public class SimulationOnPanel {
     private Timer timer;
 
     public SimulationOnPanel(Cell[][] cellList, Panel panel) {
-        System.out.println("START");
         this.panel = panel;
         world = new World(cellList);
         world.setNeighboursForAllCells();
@@ -25,7 +24,6 @@ public class SimulationOnPanel {
     }
 
     public void restart(Cell[][] cellList) {
-        System.out.println("RESTART");
         world.setCellList(cellList);
         world.setNeighboursForAllCells();
         start(initialTickDelay, tickDelay);

@@ -11,24 +11,24 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class Panel extends JPanel {
+public class Panel extends JPanel{
 
     private final int ROWS;
     private final int COLUMNS;
     private final int HEIGHT_OF_ROWS;
     private final int WIDTH_OF_ROWS;
 
-    private Cell[][] cellList;
-    private Cell[][] tempCellList;
+    private transient Cell[][] cellList;
+    private transient Cell[][] tempCellList;
     private boolean allowMouseInput = true;
     private boolean isFreshStart = true;
     private boolean isSimInProgress = false;
-    private SimulationOnPanel simulation;
+    private transient SimulationOnPanel simulation;
 
     public Panel(int width, int height, int rows, int columns) {
         this.setFocusable(true);
         this.cellList = World.generateCellList(rows, columns);
-        this.tempCellList = new Cell[cellList.length][cellList[0].length];
+        this.tempCellList = new Cell[rows][columns];
         this.ROWS = rows;
         this.COLUMNS = columns;
         this.HEIGHT_OF_ROWS = height / ROWS;
@@ -49,42 +49,71 @@ public class Panel extends JPanel {
                 }
             }
             public void mousePressed(MouseEvent e) {
+                //Only mouseClicked will be used
             }
             public void mouseReleased(MouseEvent e) {
+                //Only mouseClicked will be used
             }
             public void mouseEntered(MouseEvent e) {
+                //Only mouseClicked will be used
             }
             public void mouseExited(MouseEvent e) {
+                //Only mouseClicked will be used
             }
         });
-
         this.addKeyListener(new KeyListener() {
             public void keyTyped(KeyEvent e) {
+                //only keyPressed will be used
             }
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == 32 && !isSimInProgress) { //32 = Spacebar
                     if (isFreshStart) {
-                        tempCellList = copyOfCellList();
-                        simulation = new SimulationOnPanel(cellList, Panel.this);
-                        isSimInProgress = true;
-                        allowMouseInput = false;
-                        isFreshStart = false;
+                        start();
                     } else {
-                        simulation.restart(tempCellList);
-                        //simulation = new SimulationOnPanel(tempCellList, Panel.this);
-                        isSimInProgress = true;
-                        allowMouseInput = false;
+                        restart();
                     }
                 } else if (e.getKeyCode() == 27 && isSimInProgress) { //27 = Escape
-                    isSimInProgress = false;
-                    allowMouseInput = true;
-
-                    simulation.stop();
+                    stop();
                 }
             }
             public void keyReleased(KeyEvent e) {
+                //only keyPressed will be used
             }
         });
+    }
+
+    private void start() {
+        tempCellList = cloneList(cellList);
+        simulation = new SimulationOnPanel(cellList, Panel.this);
+        isSimInProgress = true;
+        allowMouseInput = false;
+        isFreshStart = false;
+    }
+
+    private void restart() {
+        tempCellList = cloneList(cellList);
+        cellList = cloneList(tempCellList);
+        simulation.restart(cellList);
+        isSimInProgress = true;
+        allowMouseInput = false;
+    }
+
+    private void stop() {
+        cellList = cloneList(tempCellList);
+        repaint();
+        isSimInProgress = false;
+        allowMouseInput = true;
+        simulation.stop();
+    }
+
+    private Cell[][] cloneList(Cell[][] cellList) {
+        Cell[][] tempList = new Cell[cellList.length][cellList[0].length];
+        for (int i = 0; i < cellList.length; i++) {
+            for (int j = 0; j < cellList[0].length; j++) {
+                tempList[i][j] = new Cell(cellList[i][j].isAlive());
+            }
+        }
+        return tempList;
     }
 
     @Override
@@ -113,19 +142,4 @@ public class Panel extends JPanel {
     public void paint() {
         repaint();
     }
-
-    public Cell[][] copyOfCellList() {
-        Cell[][] tempListCell = new Cell[cellList.length][cellList[0].length];
-        tempListCell = getCellList();
-        for (int i = 0; i < cellList.length; i++) {
-            for (int j = 0; j < cellList[0].length; j++) {
-                tempListCell[i][j] = cellList[i][j];
-            }
-        }
-        return tempListCell;
-    }
-    public Cell[][] getCellList() {
-        return cellList;
-    }
-
 }

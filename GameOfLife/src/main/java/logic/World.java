@@ -61,25 +61,25 @@ public class World {
     }
 
     public void generateNextGeneration() {
-        Cell[][] cellList = getCellList();
-        Cell[][] tempListCell = new Cell[cellList.length][cellList[0].length];
-        tempListCell = copyOfCellList();
+        Cell[][] tempCellListOriginal = getCellList();
+        Cell[][] tempListCellNew;
+        tempListCellNew = copyOfCellList();
 
         for (int y = 1; y < cellsPerColumn - 1; y++) {
             for (int x = 1; x < cellsPerRow - 1; x++) {
-                Cell cell = cellList[y][x];
+                Cell cell = tempCellListOriginal[y][x];
                 if (cell.isAlive() && cell.getAliveNeighbours() < 2 ||
                         cell.isAlive() && cell.getAliveNeighbours() > 3) {
-                    tempListCell[y][x].setAlive(false);
+                    tempListCellNew[y][x].setAlive(false);
                 } else if (cell.isAlive() && cell.getAliveNeighbours() == 2 ||
                         cell.isAlive() && cell.getAliveNeighbours() == 3) {
-                    tempListCell[y][x].setAlive(true);
+                    tempListCellNew[y][x].setAlive(true);
                 } else if (!cell.isAlive() && cell.getAliveNeighbours() == 3) {
-                    tempListCell[y][x].setAlive(true);
+                    tempListCellNew[y][x].setAlive(true);
                 }
             }
         }
-        setCellList(tempListCell);
+        setCellList(tempListCellNew);
         setNeighboursForAllCells();
     }
 

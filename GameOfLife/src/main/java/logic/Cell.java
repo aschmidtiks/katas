@@ -24,5 +24,4 @@ public class Cell {
     public void setAliveNeighbours(int aliveNeighbours) {
         this.aliveNeighbours = aliveNeighbours;
     }
-
 }
