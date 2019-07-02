@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264e8b74-7571-4f91-a97b-ac374fb113df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/CopyArrayTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CopyArrayTest/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/gui/Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/gui/Panel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/logic/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/logic/Logic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/logic/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/main/java/logic/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Reversi/src/test/java/BoardTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CopyArrayTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CopyArrayTest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/SimulationOnPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/SimulationOnPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Cell.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,18 +38,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="609">
               <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#1222:1947" />
-                <element signature="method#mousePressed#0;class#1222:1947" />
-                <element signature="method#mouseReleased#0;class#1222:1947" />
-                <element signature="method#mouseEntered#0;class#1222:1947" />
-                <element signature="method#mouseExited#0;class#1222:1947" />
-                <element signature="class#1983:3123" />
-                <element signature="method#keyTyped#0;class#1983:3123" />
-                <element signature="method#keyReleased#0;class#1983:3123" />
                 <element signature="method#start#0;class#Panel#0" />
                 <element signature="method#restart#0;class#Panel#0" />
                 <element signature="method#stop#0;class#Panel#0" />
@@ -186,6 +171,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Reversi" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -239,7 +225,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.10268949" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.10391198" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -372,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -415,20 +394,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="609">
           <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#1222:1947" />
-            <element signature="method#mousePressed#0;class#1222:1947" />
-            <element signature="method#mouseReleased#0;class#1222:1947" />
-            <element signature="method#mouseEntered#0;class#1222:1947" />
-            <element signature="method#mouseExited#0;class#1222:1947" />
-            <element signature="class#1983:3123" />
-            <element signature="method#keyTyped#0;class#1983:3123" />
-            <element signature="method#keyReleased#0;class#1983:3123" />
             <element signature="method#start#0;class#Panel#0" />
             <element signature="method#restart#0;class#Panel#0" />
             <element signature="method#stop#0;class#Panel#0" />

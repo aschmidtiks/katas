@@ -1,0 +1,8 @@
+
+Gsquid:S1481$")Remove this unused "game" local variable.(ÄÜ¶×8­æµ™»-
+Vsquid:S1854A"8Remove this useless assignment to local variable "game".(ÄÜ¶×8ì±µ™»-
+Gsquid:S1481A")Remove this unused "game" local variable.(ÄÜ¶×8ì±µ™»-
+Vsquid:S1854h"8Remove this useless assignment to local variable "game".(ÄÜ¶×8ÝÆ®™»-
+Gsquid:S1481h")Remove this unused "game" local variable.(ÄÜ¶×8ÝÆ®™»-
+1squid:S1220""Move this file to a named package.
+Vsquid:S1854$"8Remove this useless assignment to local variable "game".(ÄÜ¶×8­æµ™»-
