@@ -34,22 +34,11 @@ public class BoardTests {
 
         Board board = new Board(input);
         Game game = new Game(board);
-        assertArrayEquals(result, board.getSlots());
+        assertArrayEquals(result, game.getBoard().getSlots());
     }
 
     @Test
     public void testDefaultBoard() {
-
-        Slot[][] input = {
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.PLAYER1, Slot.PLAYER2, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.PLAYER2, Slot.PLAYER1, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-        };
         Slot[][] result = {
                 {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
                 {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
@@ -61,34 +50,22 @@ public class BoardTests {
                 {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
         };
 
-        Board board = new Board(input);
-        Game game = new Game(board);
+        Game game = new Game();
 
-        board.setSlot(Slot.LEGAL_POSITION_P1, 2, 3);
-        board.setSlot(Slot.LEGAL_POSITION_P1, 3, 2);
-        board.setSlot(Slot.LEGAL_POSITION_P1, 4, 5);
-        board.setSlot(Slot.LEGAL_POSITION_P1, 5, 4);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 2, 3);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 3, 2);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 4, 5);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 5, 4);
 
-        board.setSlot(Slot.LEGAL_POSITION_P2, 2, 4);
-        board.setSlot(Slot.LEGAL_POSITION_P2, 3, 5);
-        board.setSlot(Slot.LEGAL_POSITION_P2, 4, 2);
-        board.setSlot(Slot.LEGAL_POSITION_P2, 5, 3);
-        assertArrayEquals(result, board.getSlots());
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P2, 2, 4);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P2, 3, 5);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P2, 4, 2);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P2, 5, 3);
+        assertArrayEquals(result, game.getBoard().getSlots());
     }
 
     @Test
-    public void testPlayer1FirstRound() {
-
-        Slot[][] input = {
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.PLAYER1, Slot.PLAYER2, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.PLAYER2, Slot.PLAYER1, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-                {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
-        };
+    public void testPlayer1FirstRoundPlayer1() {
         Slot[][] result = {
                 {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
                 {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
@@ -100,14 +77,15 @@ public class BoardTests {
                 {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
         };
 
-        Board board = new Board(input);
-        Game game = new Game(board);
+        Game game = new Game();
 
-        board.setSlot(Slot.LEGAL_POSITION_P1, 2, 3);
-        board.setSlot(Slot.LEGAL_POSITION_P1, 3, 2);
-        board.setSlot(Slot.LEGAL_POSITION_P1, 4, 5);
-        board.setSlot(Slot.LEGAL_POSITION_P1, 5, 4);
+        /*game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 2, 3);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 3, 2);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 4, 5);
+        game.getBoard().setSlot(Slot.LEGAL_POSITION_P1, 5, 4);*/
 
-        assertArrayEquals(result, board.getSlots());
+        assertArrayEquals(result, game.getBoard().getSlots());
     }
+
+
 }

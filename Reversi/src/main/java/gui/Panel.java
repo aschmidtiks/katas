@@ -1,12 +1,14 @@
 package gui;
 
+import logic.Board;
+import logic.Game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Panel extends JPanel {
-
 
     private final int WIDTH;
     private final int HEIGHT;
@@ -26,6 +28,8 @@ public class Panel extends JPanel {
 
     private boolean hasGameStart = false;
 
+    private Game game;
+
     public Panel(int rows, int columns) {
         this.setLayout(null);
         this.ROWS = rows;
@@ -41,6 +45,27 @@ public class Panel extends JPanel {
         this.START_INFO_RECT_X_POSITION = (WIDTH/2)-(START_INFO_RECT_WIDTH/2);
         this.START_INFO_RECT_Y_POSITION = (HEIGHT/2)-(START_INFO_RECT_HEIGHT/2);
 
+        createButtons();
+        createLabels();
+    }
+    private void createLabels() {
+        this.infoText.setText("Free slots are empty and legal slots are green");
+        this.infoText.setBounds(START_INFO_RECT_X_POSITION + 50,START_INFO_RECT_Y_POSITION,
+                START_INFO_RECT_WIDTH - 50,START_INFO_RECT_HEIGHT/5);
+
+        this.infoTextPlayer1.setText("Player 1 color: Blue");
+        this.infoTextPlayer1.setBounds(START_INFO_RECT_X_POSITION + 50,infoText.getY() + infoText.getHeight(),
+                START_INFO_RECT_WIDTH - 50,START_INFO_RECT_HEIGHT/5);
+
+        this.infoTextPlayer2.setText("Player 2 color: Red");
+        this.infoTextPlayer2.setBounds(START_INFO_RECT_X_POSITION + 50,infoTextPlayer1.getY() + infoTextPlayer1.getHeight(),
+                START_INFO_RECT_WIDTH - 50,START_INFO_RECT_HEIGHT/5);
+
+        this.add(infoText);
+        this.add(infoTextPlayer1);
+        this.add(infoTextPlayer2);
+    }
+    private void createButtons() {
         this.startButton.setText("Start");
         this.startButton.setSize(100, 50);
         this.startButton.setLocation((START_INFO_RECT_X_POSITION+(START_INFO_RECT_WIDTH/2)-(startButton.getWidth()/2)),
@@ -53,32 +78,17 @@ public class Panel extends JPanel {
                 infoTextPlayer2.setVisible(false);
                 startButton.setVisible(false);
                 repaint();
-                //startGame();
+                start();
             }
         });
         this.add(startButton);
-
-        this.infoText.setText("Free slots are empty and legal slots are green");
-        this.infoText.setBounds(START_INFO_RECT_X_POSITION + 50,START_INFO_RECT_Y_POSITION,
-                START_INFO_RECT_WIDTH - 50,START_INFO_RECT_HEIGHT/5);
-
-        this.infoTextPlayer1.setText("logic.Player 1 color: Blue");
-        this.infoTextPlayer1.setBounds(START_INFO_RECT_X_POSITION + 50,infoText.getY() + infoText.getHeight(),
-                START_INFO_RECT_WIDTH - 50,START_INFO_RECT_HEIGHT/5);
-
-        this.infoTextPlayer2.setText("logic.Player 2 color: Red");
-        this.infoTextPlayer2.setBounds(START_INFO_RECT_X_POSITION + 50,infoTextPlayer1.getY() + infoTextPlayer1.getHeight(),
-                START_INFO_RECT_WIDTH - 50,START_INFO_RECT_HEIGHT/5);
-
-        this.add(infoText);
-        this.add(infoTextPlayer1);
-        this.add(infoTextPlayer2);
     }
 
-    /*private void startGame() {
+
+    private void start() {
+        game = new Game();
         repaint();
-        //start logic
-    }*/
+    }
 
     @Override
     public void paintComponent(Graphics g) {
@@ -94,7 +104,34 @@ public class Panel extends JPanel {
         g.setColor(Color.BLACK);
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLUMNS; j++) {
-                g.drawRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                switch(game.getBoard().getSlots()[i][j])
+                {
+                    case EMPTY: {
+                        g.setColor(Color.BLACK);
+                        g.drawRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        break;
+                    }
+                    case PLAYER1: {
+                        g.setColor(Color.BLUE);
+                        g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        break;
+                    }
+                    case PLAYER2: {
+                        g.setColor(Color.RED);
+                        g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        break;
+                    }
+                    case LEGAL_POSITION_P1: {
+                        g.setColor(Color.GREEN);
+                        g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        break;
+                    }
+                    case LEGAL_POSITION_P2: {
+                        g.setColor(Color.GREEN);
+                        g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        break;
+                    }
+                }
             }
         }
     }
