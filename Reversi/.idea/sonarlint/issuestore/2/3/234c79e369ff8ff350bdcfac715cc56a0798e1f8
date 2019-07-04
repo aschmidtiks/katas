@@ -1,13 +1,18 @@
 
-…squid:S00116"aRename this field "START_INFO_RECT_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚„Ûşÿÿÿÿ8¹…÷—»-
-ysquid:S00116"URename this field "SLOT_WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÊŞçùÿÿÿÿ8¹…÷—»-
-nsquid:S00116"ORename this field "ROWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¡ÔÍ8¹…÷—»-
-„squid:S00116"`Rename this field "START_INFO_RECT_WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰­Çìÿÿÿÿÿ8¹…÷—»-
-osquid:S00116"PRename this field "WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã»¼¡8¹…÷—»-
-isquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(üÒ¬š8¹…÷—»-
-isquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(ªşşÃ8¹…÷—»-
-vsquid:S00116"RRename this field "COLUMNS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÛßüÿÿÿÿ8¹…÷—»-
-‰squid:S00116"eRename this field "START_INFO_RECT_X_POSITION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä€Ù¸ûÿÿÿÿ8¹…÷—»-
-„squid:S00116"eRename this field "START_INFO_RECT_Y_POSITION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºùí“8¹…÷—»-
-usquid:S00116"QRename this field "HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÆÜùÿÿÿÿ8¹…÷—»-
-zsquid:S00116"VRename this field "SLOT_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø•ÉŞÿÿÿÿÿ8¹…÷—»-
+Ssquid:UselessImportCheck"(Remove this unused import 'logic.Board'.( ’¢å8àèëà»-
+„squid:S00116"eRename this field "START_INFO_RECT_Y_POSITION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºùí“8¹…÷—»-
+Psquid:S1199}"-Extract this nested code block into a method.(¼Ë®ùÿÿÿÿ8àèëà»-
+Qsquid:S1199‡"-Extract this nested code block into a method.(ñóÄùÿÿÿÿ8àèëà»-
+osquid:S00116"PRename this field "WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã»¼¡8¹…÷—»-
+Qsquid:S1199‚"-Extract this nested code block into a method.(°Ó¬Äşÿÿÿÿ8àèëà»-
+„squid:S00116"`Rename this field "START_INFO_RECT_WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰­Çìÿÿÿÿÿ8¹…÷—»-
+nsquid:S00116"ORename this field "ROWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¡ÔÍ8¹…÷—»-
+vsquid:S00116"RRename this field "COLUMNS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÛßüÿÿÿÿ8¹…÷—»-
+…squid:S00116"aRename this field "START_INFO_RECT_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚„Ûşÿÿÿÿ8¹…÷—»-
+‰squid:S00116"eRename this field "START_INFO_RECT_X_POSITION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä€Ù¸ûÿÿÿÿ8¹…÷—»-
+Isquid:S1948 "&Make "game" transient or serializable.(Ä¿–øÿÿÿÿ8àèëà»-
+Lsquid:S1199‘"-Extract this nested code block into a method.(ÀŸ¤ş8àèëà»-
+ysquid:S00116"URename this field "SLOT_WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÊŞçùÿÿÿÿ8¹…÷—»-
+Qsquid:S1199Œ"-Extract this nested code block into a method.(™Ó‰ˆÿÿÿÿÿ8àèëà»-
+usquid:S00116"QRename this field "HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÆÜùÿÿÿÿ8¹…÷—»-
+zsquid:S00116"VRename this field "SLOT_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø•ÉŞÿÿÿÿÿ8¹…÷—»-

@@ -24,21 +24,13 @@ public class Game {
     }
 
     private void runGame() {
-        switch(turn.getCurrentPlayer()){
-            case PLAYER1: {
-                //Logic Player 1
-                board.calcLegalMoves(turn.getCurrentPlayer());
-                break;
-            }
-
-            case PLAYER2: {
-                //Logic Player 2
-                board.calcLegalMoves(turn.getCurrentPlayer());
-                break;
-            }
-
-        }
+        turn.setCurrentPlayer(Player.PLAYER1);
+        board.calcLegalMoves(turn.getCurrentPlayer());
     }
 
-
+    public void nextRound() {
+        board.setSlotsForLogic();
+        turn.setCurrentPlayer( turn.getCurrentPlayer() == Player.PLAYER1 ? Player.PLAYER2 : Player.PLAYER1);
+        board.calcLegalMoves(turn.getCurrentPlayer());
+    }
 }

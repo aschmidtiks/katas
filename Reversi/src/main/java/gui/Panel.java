@@ -5,8 +5,9 @@ import logic.Game;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class Panel extends JPanel {
 
@@ -31,6 +32,7 @@ public class Panel extends JPanel {
     private Game game;
 
     public Panel(int rows, int columns) {
+        this.setFocusable(true);
         this.setLayout(null);
         this.ROWS = rows;
         this.COLUMNS = columns;
@@ -47,6 +49,21 @@ public class Panel extends JPanel {
 
         createButtons();
         createLabels();
+
+        this.addKeyListener(new KeyListener() {
+            public void keyTyped(KeyEvent e) {
+                //only keyPressed will be used
+            }
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == 27) {
+                    game.nextRound();
+                    repaint();
+                }
+            }
+            public void keyReleased(KeyEvent e) {
+                //only keyPressed will be used
+            }
+        });
     }
     private void createLabels() {
         this.infoText.setText("Free slots are empty and legal slots are green");
@@ -83,7 +100,6 @@ public class Panel extends JPanel {
         });
         this.add(startButton);
     }
-
 
     private void start() {
         game = new Game();

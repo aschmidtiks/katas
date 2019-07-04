@@ -21,3 +21,5 @@ M
 src/test/java/BoardTests.java,0\9\09d9ef70400025097d0e1a27f19947d79a1995fb
 M
 src/main/java/logic/Game.java,d\d\dd3d10460ef81b52e6352d7490f1a424fb14166d
+L
+src/test/java/GameTests.java,2\6\26444420f4de79f2a39a1e73b1947b2e9b262225

@@ -16,13 +16,8 @@ public enum Slot {
         this.slotValue = value;
     }
 
-    public Point[] neighboursPosition;
+    private Point[] neighboursPosition;
     public Point[] getNeighboursPosition() {
         return neighboursPosition;
     }
-    public void setNeighboursPosition(Point[] neighboursPosition) {
-        this.neighboursPosition = neighboursPosition;
-    }
-
-
 }
