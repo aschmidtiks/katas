@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd5ddf1b-4e12-4ee0-b763-b223366d3023" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/3/8/385415b2491a7a6c17e2a2d0b8be9cb0cc215237" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/3/8/385415b2491a7a6c17e2a2d0b8be9cb0cc215237" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GameOfLife/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd3d10460ef81b52e6352d7490f1a424fb14166d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd3d10460ef81b52e6352d7490f1a424fb14166d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e342b2833475470c257329c10a593d3a9c2bb129" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e342b2833475470c257329c10a593d3a9c2bb129" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Panel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logic/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Logic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Logic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Slot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Slot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Turn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Turn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GameTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GameTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,8 +30,8 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="455">
+              <caret line="152" column="47" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Board#0;class#Board#0" />
@@ -105,8 +80,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="119">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#187#292#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,8 +159,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-796" />
-    <option name="y" value="-8" />
+    <option name="x" value="-380" />
+    <option name="y" value="-9" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -421,7 +401,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.22952586" />
@@ -431,12 +410,12 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.1693154" side_tool="true" weight="0.28125" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.3294621" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.8306846" visible="true" weight="0.28125" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.8306846" weight="0.28125" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3297414" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.19719827" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49625188" visible="true" weight="0.12713936" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49625188" visible="true" weight="0.1589242" />
       <window_info anchor="bottom" id="SonarLint" order="5" weight="0.31573275" />
       <window_info id="Structure" order="6" sideWeight="0.5023622" side_tool="true" weight="0.12713936" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -455,33 +434,34 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3286638" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.28125" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3294621" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.8306846" visible="true" weight="0.28125" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="SonarLint" order="5" weight="0.31573275" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49625188" visible="true" weight="0.12713936" />
+      <window_info id="Structure" order="6" sideWeight="0.5023622" side_tool="true" weight="0.12713936" />
       <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info active="true" anchor="bottom" id="SonarLint" order="5" visible="true" weight="0.31573275" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49925038" visible="true" weight="0.099633254" />
-      <window_info id="Structure" order="6" sideWeight="0.50074965" side_tool="true" weight="0.11919315" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.22952586" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3297414" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.33297414" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.38469827" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.19719827" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.1693154" side_tool="true" weight="0.28125" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3297414" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.15301724" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info id="Favorites" order="3" sideWeight="0.50074965" side_tool="true" weight="0.11919315" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3294621" />
+      <window_info id="Favorites" order="3" sideWeight="0.5037481" side_tool="true" weight="0.12713936" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -563,6 +543,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#187#292#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -927,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -957,10 +935,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#187#292#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="455">
+          <caret line="152" column="47" selection-start-line="152" selection-start-column="47" selection-end-line="152" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Board#0;class#Board#0" />

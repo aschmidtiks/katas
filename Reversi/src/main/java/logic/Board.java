@@ -149,6 +149,8 @@ public class Board {
                 nextStep.y += listWithTargetedLegalMoves.get(i).get(1).y;
             }
         }
+
+        System.out.print(Thread.State.values());
     }
 
     private List<List<Point>> getTargetedMovePoints(Point chosenLegalMovePoint) {
