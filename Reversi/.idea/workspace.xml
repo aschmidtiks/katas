@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd5ddf1b-4e12-4ee0-b763-b223366d3023" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/3/8/385415b2491a7a6c17e2a2d0b8be9cb0cc215237" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife/.idea/sonarlint/issuestore/3/8/385415b2491a7a6c17e2a2d0b8be9cb0cc215237" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GameOfLife/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameOfLife/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/234c79e369ff8ff350bdcfac715cc56a0798e1f8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd3d10460ef81b52e6352d7490f1a424fb14166d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd3d10460ef81b52e6352d7490f1a424fb14166d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e342b2833475470c257329c10a593d3a9c2bb129" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e342b2833475470c257329c10a593d3a9c2bb129" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Panel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/Slot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/Board$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/Panel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/Panel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logic/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/Logic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Logic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/Slot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Slot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/Turn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/Turn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GameTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GameTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,6 +39,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Reversi$Main.ic" NAME="Main Coverage Results" MODIFIED="1562584980436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -33,25 +55,33 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="177">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Board#0;class#Board#0" />
                 <element signature="method#Board#1;class#Board#0" />
-                <element signature="method#calcLegalMoves#0;class#Board#0" />
-                <element signature="method#setSlotsForDrawFunction#0;class#Board#0" />
-                <element signature="method#setSlotsForLogic#0;class#Board#0" />
-                <element signature="method#calcLegalMovesTop#0;class#Board#0" />
-                <element signature="method#calcLegalMovesTopLeft#0;class#Board#0" />
-                <element signature="method#calcLegalMovesTopRight#0;class#Board#0" />
-                <element signature="method#calcLegalMovesTopStraight#0;class#Board#0" />
-                <element signature="method#calcLegalMovesSides#0;class#Board#0" />
-                <element signature="method#calcLegalMovesSidesLeft#0;class#Board#0" />
-                <element signature="method#calcLegalMovesSidesRight#0;class#Board#0" />
-                <element signature="method#calcLegalMovesBottom#0;class#Board#0" />
-                <element signature="method#calcLegalMovesBottomLeft#0;class#Board#0" />
-                <element signature="method#calcLegalMovesBottomStraight#0;class#Board#0" />
+                <element signature="method#checkSlotForCurrentPlayer#0;class#Board#0" />
+                <element signature="method#checkForSurroundingEnemies#0;class#Board#0" />
+                <element signature="method#calculateLegalMovesForThisSlot#0;class#Board#0" />
+                <element signature="method#addSlotToMoveList#0;class#Board#0" />
+                <element signature="method#setSubList#0;class#Board#0" />
+                <element signature="method#setLegalMovesSlots#0;class#Board#0" />
+                <element signature="method#getTargetedMovePoints#0;class#Board#0" />
+                <element signature="method#deleteUsedPointsFromParentList#0;class#Board#0" />
+                <element signature="method#clearBoardFromEnemyLegalMoves#0;class#Board#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,17 +90,23 @@
       <file leaf-file-name="Panel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gui/Panel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            <state relative-caret-position="111">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#1561:2237" />
                 <element signature="method#createLabels#0;class#Panel#0" />
-                <element signature="method#createButtons#0;class#Panel#0" />
-                <element signature="method#paintComponent#0;class#Panel#0" />
                 <element signature="method#drawBoard#0;class#Panel#0" />
                 <element signature="method#drawStarGameInfo#0;class#Panel#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -93,6 +129,14 @@
       <find>point</find>
       <find>8</find>
       <find>MAX_BOARD_SIZE</find>
+      <find>LEGAL_</find>
+      <find>slots</find>
+      <find>direct</find>
+      <find>legalMovesList.get(i).get(1)</find>
+      <find>direction</find>
+      <find>hasGameStart</find>
+      <find>calculateLegalMovesForThisSlot</find>
+      <find>calculateLegalMoves</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,17 +146,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/gui/Frame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Turn.java" />
         <option value="$PROJECT_DIR$/src/test/java/BoardTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Slot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/MouseAdapterClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gui/Panel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gui/Panel.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/Board.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Reversi" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -123,10 +179,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-796" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1066" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -136,8 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -170,6 +224,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Reversi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Reversi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,6 +251,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,9 +358,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GameTests.testFullMovesForPlayer1InFirstRound" />
         <item itemvalue="JUnit.GameTests.testFullMovesForPlayer2InFirstRound" />
         <item itemvalue="JUnit.GameTests" />
-        <item itemvalue="JUnit.GameTests.testFullMovesForPlayer1InFirstRound" />
         <item itemvalue="JUnit.GameTests.testFirstRoundPlayer2LegalMoves" />
       </list>
     </recent_temporary>
@@ -315,35 +379,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTests - 2019.07.04 at 15h 10m 45s.xml">
-      <configuration name="GameTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTests - 2019.07.04 at 15h 11m 05s.xml">
-      <configuration name="GameTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTests - 2019.07.04 at 15h 11m 48s.xml">
-      <configuration name="GameTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTests - 2019.07.04 at 15h 12m 49s.xml">
-      <configuration name="GameTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTests - 2019.07.04 at 15h 15m 42s.xml">
-      <configuration name="GameTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.04 at 15h 54m 56s.xml">
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 10h 50m 23s.xml">
       <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTests - 2019.07.04 at 15h 59m 06s.xml">
-      <configuration name="GameTests" configurationId="JUnit" />
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 10h 50m 56s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTests_testFullMovesForPlayer2InFirstRound - 2019.07.04 at 16h 01m 09s.xml">
-      <configuration name="GameTests.testFullMovesForPlayer2InFirstRound" configurationId="JUnit" />
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 10h 54m 40s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTests_testFullMovesForPlayer2InFirstRound - 2019.07.04 at 16h 01m 59s.xml">
-      <configuration name="GameTests.testFullMovesForPlayer2InFirstRound" configurationId="JUnit" />
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 10h 54m 57s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTests_testFullMovesForPlayer2InFirstRound - 2019.07.04 at 16h 03m 15s.xml">
-      <configuration name="GameTests.testFullMovesForPlayer2InFirstRound" configurationId="JUnit" />
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 10h 55m 33s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 10h 55m 52s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 11h 07m 23s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 13h 26m 33s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 15h 47m 52s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTests_testFullMovesForPlayer1InFirstRound - 2019.07.05 at 15h 48m 44s.xml">
+      <configuration name="GameTests.testFullMovesForPlayer1InFirstRound" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -365,49 +429,74 @@
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.1693154" side_tool="true" weight="0.28125" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3294621" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.8306846" visible="true" weight="0.28125" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.28125" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.19719827" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49925038" visible="true" weight="0.098410755" />
-      <window_info active="true" anchor="bottom" id="SonarLint" order="5" visible="true" weight="0.112068966" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3290461" />
-      <window_info id="Structure" order="6" sideWeight="0.50074965" side_tool="true" weight="0.11919315" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49625188" visible="true" weight="0.12713936" />
+      <window_info anchor="bottom" id="SonarLint" order="5" weight="0.31573275" />
+      <window_info id="Structure" order="6" sideWeight="0.5023622" side_tool="true" weight="0.12713936" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info id="Favorites" order="3" sideWeight="0.50074965" side_tool="true" weight="0.11919315" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.33297414" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.38469827" />
+      <window_info id="Favorites" order="3" sideWeight="0.5037481" side_tool="true" weight="0.12713936" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3294621" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3286638" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.28125" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info active="true" anchor="bottom" id="SonarLint" order="5" visible="true" weight="0.31573275" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49925038" visible="true" weight="0.099633254" />
+      <window_info id="Structure" order="6" sideWeight="0.50074965" side_tool="true" weight="0.11919315" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.22952586" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3297414" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.33297414" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.19719827" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.15301724" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info id="Favorites" order="3" sideWeight="0.50074965" side_tool="true" weight="0.11919315" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="46" />
+      <option name="time" value="150" />
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/BoardTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -436,14 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,10 +552,7 @@
           <caret line="106" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#1561:2237" />
             <element signature="method#createLabels#0;class#Panel#0" />
-            <element signature="method#createButtons#0;class#Panel#0" />
-            <element signature="method#paintComponent#0;class#Panel#0" />
             <element signature="method#drawBoard#0;class#Panel#0" />
             <element signature="method#drawStarGameInfo#0;class#Panel#0" />
           </folding>
@@ -485,10 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#135#240#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,19 +574,15 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Board#0;class#Board#0" />
             <element signature="method#Board#1;class#Board#0" />
-            <element signature="method#calcLegalMoves#0;class#Board#0" />
-            <element signature="method#setSlotsForDrawFunction#0;class#Board#0" />
-            <element signature="method#setSlotsForLogic#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTop#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopStraight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSides#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottom#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomStraight#0;class#Board#0" />
+            <element signature="method#checkSlotForCurrentPlayer#0;class#Board#0" />
+            <element signature="method#checkForSurroundingEnemies#0;class#Board#0" />
+            <element signature="method#calculateLegalMovesForThisSlot#0;class#Board#0" />
+            <element signature="method#addSlotToMoveList#0;class#Board#0" />
+            <element signature="method#setSubList#0;class#Board#0" />
+            <element signature="method#setLegalMovesSlots#0;class#Board#0" />
+            <element signature="method#getTargetedMovePoints#0;class#Board#0" />
+            <element signature="method#deleteUsedPointsFromParentList#0;class#Board#0" />
+            <element signature="method#clearBoardFromEnemyLegalMoves#0;class#Board#0" />
           </folding>
         </state>
       </provider>
@@ -555,14 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,10 +652,7 @@
           <caret line="106" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#1561:2237" />
             <element signature="method#createLabels#0;class#Panel#0" />
-            <element signature="method#createButtons#0;class#Panel#0" />
-            <element signature="method#paintComponent#0;class#Panel#0" />
             <element signature="method#drawBoard#0;class#Panel#0" />
             <element signature="method#drawStarGameInfo#0;class#Panel#0" />
           </folding>
@@ -615,19 +674,15 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Board#0;class#Board#0" />
             <element signature="method#Board#1;class#Board#0" />
-            <element signature="method#calcLegalMoves#0;class#Board#0" />
-            <element signature="method#setSlotsForDrawFunction#0;class#Board#0" />
-            <element signature="method#setSlotsForLogic#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTop#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopStraight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSides#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottom#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomStraight#0;class#Board#0" />
+            <element signature="method#checkSlotForCurrentPlayer#0;class#Board#0" />
+            <element signature="method#checkForSurroundingEnemies#0;class#Board#0" />
+            <element signature="method#calculateLegalMovesForThisSlot#0;class#Board#0" />
+            <element signature="method#addSlotToMoveList#0;class#Board#0" />
+            <element signature="method#setSubList#0;class#Board#0" />
+            <element signature="method#setLegalMovesSlots#0;class#Board#0" />
+            <element signature="method#getTargetedMovePoints#0;class#Board#0" />
+            <element signature="method#deleteUsedPointsFromParentList#0;class#Board#0" />
+            <element signature="method#clearBoardFromEnemyLegalMoves#0;class#Board#0" />
           </folding>
         </state>
       </provider>
@@ -657,19 +712,15 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Board#0;class#Board#0" />
             <element signature="method#Board#1;class#Board#0" />
-            <element signature="method#calcLegalMoves#0;class#Board#0" />
-            <element signature="method#setSlotsForDrawFunction#0;class#Board#0" />
-            <element signature="method#setSlotsForLogic#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTop#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopStraight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSides#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottom#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomStraight#0;class#Board#0" />
+            <element signature="method#checkSlotForCurrentPlayer#0;class#Board#0" />
+            <element signature="method#checkForSurroundingEnemies#0;class#Board#0" />
+            <element signature="method#calculateLegalMovesForThisSlot#0;class#Board#0" />
+            <element signature="method#addSlotToMoveList#0;class#Board#0" />
+            <element signature="method#setSubList#0;class#Board#0" />
+            <element signature="method#setLegalMovesSlots#0;class#Board#0" />
+            <element signature="method#getTargetedMovePoints#0;class#Board#0" />
+            <element signature="method#deleteUsedPointsFromParentList#0;class#Board#0" />
+            <element signature="method#clearBoardFromEnemyLegalMoves#0;class#Board#0" />
           </folding>
         </state>
       </provider>
@@ -678,14 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,10 +763,7 @@
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#1561:2237" />
             <element signature="method#createLabels#0;class#Panel#0" />
-            <element signature="method#createButtons#0;class#Panel#0" />
-            <element signature="method#paintComponent#0;class#Panel#0" />
             <element signature="method#drawBoard#0;class#Panel#0" />
             <element signature="method#drawStarGameInfo#0;class#Panel#0" />
           </folding>
@@ -758,14 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,10 +832,7 @@
           <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#1561:2237" />
             <element signature="method#createLabels#0;class#Panel#0" />
-            <element signature="method#createButtons#0;class#Panel#0" />
-            <element signature="method#paintComponent#0;class#Panel#0" />
             <element signature="method#drawBoard#0;class#Panel#0" />
             <element signature="method#drawStarGameInfo#0;class#Panel#0" />
           </folding>
@@ -824,31 +853,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameTests.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="181">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/MouseAdapterClass.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/awt/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#135#240#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="-159">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -863,21 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/Turn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/Slot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -885,33 +886,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="3323" selection-start-line="3323" selection-end-line="3323" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BoardTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="884">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/Turn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="313">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/Panel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        <state relative-caret-position="111">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#1561:2237" />
             <element signature="method#createLabels#0;class#Panel#0" />
-            <element signature="method#createButtons#0;class#Panel#0" />
-            <element signature="method#paintComponent#0;class#Panel#0" />
             <element signature="method#drawBoard#0;class#Panel#0" />
             <element signature="method#drawStarGameInfo#0;class#Panel#0" />
           </folding>
@@ -920,25 +959,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="177">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Board#0;class#Board#0" />
             <element signature="method#Board#1;class#Board#0" />
-            <element signature="method#calcLegalMoves#0;class#Board#0" />
-            <element signature="method#setSlotsForDrawFunction#0;class#Board#0" />
-            <element signature="method#setSlotsForLogic#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTop#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesTopStraight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSides#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesSidesRight#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottom#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomLeft#0;class#Board#0" />
-            <element signature="method#calcLegalMovesBottomStraight#0;class#Board#0" />
+            <element signature="method#checkSlotForCurrentPlayer#0;class#Board#0" />
+            <element signature="method#checkForSurroundingEnemies#0;class#Board#0" />
+            <element signature="method#calculateLegalMovesForThisSlot#0;class#Board#0" />
+            <element signature="method#addSlotToMoveList#0;class#Board#0" />
+            <element signature="method#setSubList#0;class#Board#0" />
+            <element signature="method#setLegalMovesSlots#0;class#Board#0" />
+            <element signature="method#getTargetedMovePoints#0;class#Board#0" />
+            <element signature="method#deleteUsedPointsFromParentList#0;class#Board#0" />
+            <element signature="method#clearBoardFromEnemyLegalMoves#0;class#Board#0" />
           </folding>
         </state>
       </provider>

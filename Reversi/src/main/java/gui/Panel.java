@@ -1,13 +1,11 @@
 package gui;
-
-import logic.Board;
 import logic.Game;
+import logic.Slot;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.lang.reflect.InvocationTargetException;
 
 public class Panel extends JPanel {
 
@@ -27,17 +25,15 @@ public class Panel extends JPanel {
     private JLabel infoTextPlayer1 = new JLabel();
     private JLabel infoTextPlayer2 = new JLabel();
 
-    private boolean hasGameStart = false;
-
-    private Game game;
+    private transient Game game;
 
     public Panel(int rows, int columns) {
         this.setFocusable(true);
         this.setLayout(null);
         this.ROWS = rows;
         this.COLUMNS = columns;
-        this.WIDTH = columns * 100;
-        this.HEIGHT = rows * 100;
+        this.WIDTH = columns * 50;
+        this.HEIGHT = rows * 50;
         this.SLOT_WIDTH = WIDTH / COLUMNS;
         this.SLOT_HEIGHT = HEIGHT / ROWS;
         this.setPreferredSize(new Dimension(this.WIDTH, this.HEIGHT));
@@ -49,22 +45,9 @@ public class Panel extends JPanel {
 
         createButtons();
         createLabels();
-
-        this.addKeyListener(new KeyListener() {
-            public void keyTyped(KeyEvent e) {
-                //only keyPressed will be used
-            }
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == 27) {
-                    game.nextRound();
-                    repaint();
-                }
-            }
-            public void keyReleased(KeyEvent e) {
-                //only keyPressed will be used
-            }
-        });
+        createListener();
     }
+
     private void createLabels() {
         this.infoText.setText("Free slots are empty and legal slots are green");
         this.infoText.setBounds(START_INFO_RECT_X_POSITION + 50,START_INFO_RECT_Y_POSITION,
@@ -89,7 +72,6 @@ public class Panel extends JPanel {
                 (START_INFO_RECT_Y_POSITION*2)+(START_INFO_RECT_HEIGHT/3));
         this.startButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                hasGameStart = true;
                 infoText.setVisible(false);
                 infoTextPlayer1.setVisible(false);
                 infoTextPlayer2.setVisible(false);
@@ -100,6 +82,25 @@ public class Panel extends JPanel {
         });
         this.add(startButton);
     }
+    private void createListener() {
+        this.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (game != null) {
+                    Point mousePos = new Point(e.getX() / SLOT_WIDTH, e.getY() / SLOT_HEIGHT);
+                    if (game.getBoard().getSlots()[mousePos.y][mousePos.x] == Slot.LEGAL_POSITION_P1) {
+                        game.getBoard().changeLegalSlotToPlayerSlot(Slot.PLAYER1, mousePos.y, mousePos.x, game.getTurn().getCurrentPlayer());
+                        repaint();
+                        game.nextRound();
+                    } else if (game.getBoard().getSlots()[mousePos.y][mousePos.x] == Slot.LEGAL_POSITION_P2) {
+                        game.getBoard().changeLegalSlotToPlayerSlot(Slot.PLAYER2, mousePos.y, mousePos.x, game.getTurn().getCurrentPlayer());
+                        repaint();
+                        game.nextRound();
+                    }
+                }
+            }
+        });
+    }
 
     private void start() {
         game = new Game();
@@ -109,7 +110,7 @@ public class Panel extends JPanel {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        if(hasGameStart) {
+        if(game != null) {
             drawBoard(g);
         } else {
             drawStarGameInfo(g);
@@ -130,21 +131,29 @@ public class Panel extends JPanel {
                     case PLAYER1: {
                         g.setColor(Color.BLUE);
                         g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        g.setColor(Color.BLACK);
+                        g.drawRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
                         break;
                     }
                     case PLAYER2: {
                         g.setColor(Color.RED);
                         g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        g.setColor(Color.BLACK);
+                        g.drawRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
                         break;
                     }
                     case LEGAL_POSITION_P1: {
                         g.setColor(Color.GREEN);
                         g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        g.setColor(Color.BLACK);
+                        g.drawRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
                         break;
                     }
                     case LEGAL_POSITION_P2: {
                         g.setColor(Color.GREEN);
                         g.fillRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
+                        g.setColor(Color.BLACK);
+                        g.drawRect(j * SLOT_WIDTH, i * SLOT_HEIGHT, SLOT_WIDTH, SLOT_HEIGHT);
                         break;
                     }
                 }

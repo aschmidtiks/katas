@@ -1,5 +1,6 @@
 package logic;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.*;
 import java.util.List;
@@ -8,8 +9,7 @@ public class Board {
 
     private Slot[][] slots = new Slot[8][8];
     private static final int MAX_BOARD_SIZE = 8;
-    public List<List<Point>> testLegalMoves = new ArrayList(MAX_BOARD_SIZE);
-    private List<List<Point>> legalMoves = new ArrayList(MAX_BOARD_SIZE);
+    private List<List<Point>> legalMovesList = new ArrayList(MAX_BOARD_SIZE);
 
     private Slot[][] defaultBoard = {
             {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
@@ -22,6 +22,8 @@ public class Board {
             {Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY, Slot.EMPTY},
     };
 
+
+
     public Board() {
         for (int i = 0; i < slots.length; i++) {
             for (int j = 0; j < slots[0].length; j++) {
@@ -29,6 +31,7 @@ public class Board {
             }
         }
     }
+
     public Board(Slot[][] slots) {
         for (int i = 0; i < slots.length; i++) {
             for (int j = 0; j < slots[0].length; j++) {
@@ -37,235 +40,161 @@ public class Board {
         }
     }
 
-    public boolean calcLegalMoves(Player currentPlayer) {
-        legalMoves.clear();
-        for (int i = 0; i < MAX_BOARD_SIZE; i++) {
-            for (int j = 0; j < MAX_BOARD_SIZE; j++) {
-                if (slots[i][j].toString() == currentPlayer.toString()) {
-                    calcLegalMovesForThisSlot(j, i, currentPlayer);
-                }
-            }
-        }
-        setSlotsForDrawFunction(currentPlayer);
+
+    public boolean calculateLegalMoves(Player currentPlayer) {
+        getLegalMovesList().clear();
+        checkSlotForCurrentPlayer(currentPlayer);
+        setLegalMovesSlots(currentPlayer);
         return true;
     }
 
-    private void setSlotsForDrawFunction(Player currentPlayer) {
-        if (currentPlayer.toString() == Player.PLAYER1.toString()) {
-            for (int i = 0; i < legalMoves.size(); i++) {
-                slots[legalMoves.get(i).get(0).y][legalMoves.get(i).get(0).x] = Slot.LEGAL_POSITION_P1;
-            }
-        } else {
-            for (int i = 0; i < legalMoves.size(); i++) {
-                slots[legalMoves.get(i).get(0).y][legalMoves.get(i).get(0).x] = Slot.LEGAL_POSITION_P2;
-            }
-        }
-    }
-
-    public void setSlotsForLogic() {
-        for (int i = 0; i < legalMoves.size(); i++) {
-            slots[legalMoves.get(i).get(0).y][legalMoves.get(i).get(0).x] = Slot.EMPTY;
-        }
-    }
-
-    public List<List<Point>> getLegalMoves() {
-        return legalMoves;
-    }
-
-    public void calcLegalMovesForThisSlot(int currentXPosition, int currentYPosition, Player currentPlayer) {
-        for (int i = -1; i <= 1; i++) {
-            for (int j = -1; j <= 1; j++) {
-                if (!(i == 0 && j == 0) && (slots[currentXPosition + j][currentYPosition + i].toString() != currentPlayer.toString()) &&
-                        (slots[currentXPosition + j][currentYPosition + i].toString() != Slot.EMPTY.toString())) {
-                    Point returnedPoint;
-                    returnedPoint = calcLegalMovesForThisDirection(j, i, currentXPosition + j, currentYPosition + i, currentPlayer);
-                    if (returnedPoint.x != MAX_BOARD_SIZE + 1 && returnedPoint.y != MAX_BOARD_SIZE + 1) {
-                        List<Point> tempLegalMoveList = new ArrayList(3);
-                        tempLegalMoveList.add(calcLegalMovesForThisDirection(j, i, currentXPosition + j, currentYPosition + i, currentPlayer));
-                        tempLegalMoveList.add(new Point(j, i));
-                        tempLegalMoveList.add(new Point(currentXPosition, currentYPosition));
-                        legalMoves.add(tempLegalMoveList);
-                    }
+    private void checkSlotForCurrentPlayer(Player currentPlayer) {
+        for (int i = 0; i < MAX_BOARD_SIZE; i++) {
+            for (int j = 0; j < MAX_BOARD_SIZE; j++) {
+                if (slots[i][j].toString() == currentPlayer.toString()) {
+                    Point playerPosition = new Point(j, i);
+                    checkForSurroundingEnemies(playerPosition, currentPlayer);
                 }
             }
         }
-        testLegalMoves.addAll(legalMoves);
     }
 
-    public Point calcLegalMovesForThisDirection(int xDirection, int yDirection, int currentEnemyXPosition, int currentEnemyYPosition, Player currentPlayer) {
-        Point enemyPosition = new Point(currentEnemyXPosition, currentEnemyYPosition);
-        if (yDirection == -1) {
-            return calcLegalMovesTop(xDirection, yDirection, enemyPosition, currentPlayer);
-        } else if (yDirection == 0) {
-            return calcLegalMovesSides(xDirection, yDirection, enemyPosition, currentPlayer);
-        } else if (yDirection == 1) {
-            return calcLegalMovesBottom(xDirection, yDirection, enemyPosition, currentPlayer);
+    private void checkForSurroundingEnemies(Point playerPosition, Player currentPlayer) {
+        Point direction;
+        Point slotToCheck;
+
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                direction = new Point(j, i);
+                slotToCheck = new Point(playerPosition.x + direction.x, playerPosition.y + direction.y);
+                if (slotToCheck.x < MAX_BOARD_SIZE &&
+                        slotToCheck.y < MAX_BOARD_SIZE &&
+                        slotToCheck.x >= 0 &&
+                        slotToCheck.y >= 0) {
+                    if (!(i == 0 && j == 0) &&
+                            ((slots[slotToCheck.y][slotToCheck.x].toString() != Slot.EMPTY.toString()) &&
+                                    slots[slotToCheck.y][slotToCheck.x].toString() != currentPlayer.toString())) {
+                        calculateLegalMovesForThisSlot(direction, playerPosition, slotToCheck, currentPlayer);
+                    }
+              }
+            }
         }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
     }
 
-    private Point calcLegalMovesTop(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        switch (xDirection) {
-            case -1: {
-                Point tempPoint = calcLegalMovesTopLeft(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
+    private void calculateLegalMovesForThisSlot(Point direction, Point playerPosition, Point enemyPosition, Player currentPlayer) {
+        Point cumulativeDistanceToTarget = new Point(direction.getLocation());
+        Point slotToCheck = new Point(enemyPosition.x + cumulativeDistanceToTarget.x, enemyPosition.y + cumulativeDistanceToTarget.y);
+        boolean exitWhileLoop = false;
+
+        while (!exitWhileLoop) {
+            if ((slotToCheck.y >= 0 && slotToCheck.x >= 0 && slotToCheck.y < MAX_BOARD_SIZE && slotToCheck.x < MAX_BOARD_SIZE)) {
+                if ((slots[slotToCheck.y][slotToCheck.x].toString() == Slot.EMPTY.toString())) {
+                    addSlotToMoveList(direction, cumulativeDistanceToTarget, playerPosition, enemyPosition);
+                    exitWhileLoop = true;
+                }
+                else if ((slots[slotToCheck.y][slotToCheck.x].toString() != currentPlayer.toString())) {
+                    cumulativeDistanceToTarget.y += direction.getY();
+                    cumulativeDistanceToTarget.x += direction.getX();
+                } else {
+                    exitWhileLoop = true;
+                }
+            } else {
+                exitWhileLoop = true;
             }
-            case 0: {
-                Point tempPoint = calcLegalMovesTopStraight(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            case 1: {
-                Point tempPoint = calcLegalMovesTopRight(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            default:
-                break;
         }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
-    }
-    private Point calcLegalMovesTopLeft(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                (enemyPosition.y + yDirection > 0 && enemyPosition.x + enemyPosition.x > 0)) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
-            }
-            yDirection += -1;
-            xDirection += -1;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
-    }
-    private Point calcLegalMovesTopRight(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                (enemyPosition.y + yDirection > 0 && enemyPosition.x + enemyPosition.x < MAX_BOARD_SIZE)) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
-            }
-            yDirection += -1;
-            xDirection += 1;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
-    }
-    private Point calcLegalMovesTopStraight(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                enemyPosition.y + yDirection > 0) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
-            }
-            yDirection += -1;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
     }
 
-    private Point calcLegalMovesSides(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        switch (xDirection) {
-            case -1: {
-                Point tempPoint = calcLegalMovesSidesLeft(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            case 0:
-                break;
-            case 1: {
-                Point tempPoint = calcLegalMovesSidesRight(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            default:
-                break;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
-    }
-    private Point calcLegalMovesSidesLeft(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                enemyPosition.x + xDirection > 0) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
-            }
-            xDirection += -1;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
-    }
-    private Point calcLegalMovesSidesRight(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                enemyPosition.x + xDirection < MAX_BOARD_SIZE) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
-            }
-            xDirection += 1;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
+    private void addSlotToMoveList(Point direction, Point cumulativeDistanceToTarget, Point playerPosition, Point enemyPosition) {
+        Point pointToSet = new Point(enemyPosition.x + cumulativeDistanceToTarget.x, enemyPosition.y + cumulativeDistanceToTarget.y);
+        getLegalMovesList().add(setSubList(pointToSet, direction, playerPosition));
     }
 
-    private Point calcLegalMovesBottom(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        switch (xDirection) {
-            case -1: {
-                Point tempPoint = calcLegalMovesBottomLeft(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            case 0: {
-                Point tempPoint = calcLegalMovesBottomStraight(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            case 1: {
-                Point tempPoint = calcLegalMovesBottomRight(xDirection, yDirection, enemyPosition, currentPlayer);
-                if (tempPoint.x < MAX_BOARD_SIZE && tempPoint.y < MAX_BOARD_SIZE) {
-                    return tempPoint;
-                } else break;
-            }
-            default:
-                break;
-        }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
+    // 0 = setted legal movepoint 1 = direction 2 = player position
+    private List<Point> setSubList(Point pointToSet, Point direction, Point playerPosition) {
+        List<Point> subList = new ArrayList(3);
+        subList.add(new Point(pointToSet));
+        subList.add(new Point(direction));
+        subList.add(new Point(playerPosition));
+        return subList;
     }
-    private Point calcLegalMovesBottomLeft(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                (enemyPosition.x + xDirection < MAX_BOARD_SIZE && enemyPosition.x + enemyPosition.x > 0)) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
-            }
-            yDirection += 1;
-            xDirection += -1;
+
+    private void setLegalMovesSlots(Player currentPlayer) {
+        for (int i = 0; i < legalMovesList.size(); i++) {
+            getSlots()[legalMovesList.get(i).get(0).y][legalMovesList.get(i).get(0).x] =
+                    currentPlayer.toString() == Player.PLAYER1.toString() ? Slot.LEGAL_POSITION_P1 : Slot.LEGAL_POSITION_P2;
         }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
     }
-    private Point calcLegalMovesBottomStraight(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                enemyPosition.x + xDirection < MAX_BOARD_SIZE) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
+
+    public void changeEnemySlotsToCurrentPlayer(Point chosenLegalMovePoint, Player currentPlayer) {
+        //todo die while schleife sorgt für die freezes, obwohl sie richtig durchläuft und die nächste Runde gestartet wird
+
+        List<List<Point>> listWithTargetedLegalMoves = new ArrayList(legalMovesList.size());
+        listWithTargetedLegalMoves.addAll(getTargetedMovePoints(chosenLegalMovePoint));
+
+        clearBoardFromEnemyLegalMoves();
+        deleteUsedPointsFromParentList(listWithTargetedLegalMoves);
+
+        for (int i = 0; i < listWithTargetedLegalMoves.size(); i++) {
+            Point nextStep = new Point(listWithTargetedLegalMoves.get(i).get(2).x + listWithTargetedLegalMoves.get(i).get(1).x,
+                    listWithTargetedLegalMoves.get(i).get(2).y + listWithTargetedLegalMoves.get(i).get(1).y);
+            boolean changedAllEnemies = false;
+
+            while (!changedAllEnemies) {
+                if (!nextStep.equals(listWithTargetedLegalMoves.get(i).get(0))) {
+                    getSlots()[nextStep.y][nextStep.x] = currentPlayer.toString() == "PLAYER1" ? Slot.PLAYER1 : Slot.PLAYER2;
+                } else {
+                    changedAllEnemies = true;
+                }
+                nextStep.x += listWithTargetedLegalMoves.get(i).get(1).x;
+                nextStep.y += listWithTargetedLegalMoves.get(i).get(1).y;
             }
-            yDirection += 1;
         }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
     }
-    private Point calcLegalMovesBottomRight(int xDirection, int yDirection, Point enemyPosition, Player currentPlayer) {
-        while (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection].toString() != currentPlayer.toString() ||
-                (enemyPosition.x + xDirection < MAX_BOARD_SIZE && enemyPosition.x + enemyPosition.x < MAX_BOARD_SIZE)) {
-            if (slots[enemyPosition.y + yDirection][enemyPosition.x + xDirection] == Slot.EMPTY) {
-                return new Point(enemyPosition.x + xDirection, enemyPosition.y + yDirection);
+
+    private List<List<Point>> getTargetedMovePoints(Point chosenLegalMovePoint) {
+        List<List<Point>> tempListWithTargetedLegalMoves = new ArrayList(legalMovesList.size());
+
+        for (int i = 0; i < legalMovesList.size(); i++) {
+            Point pointToCheck = new Point(legalMovesList.get(i).get(0)); // 0 = target legal move
+            if (pointToCheck.equals(chosenLegalMovePoint)) {
+                tempListWithTargetedLegalMoves.add(setSubList(legalMovesList.get(i).get(0), legalMovesList.get(i).get(1), legalMovesList.get(i).get(2)));
             }
-            yDirection += 1;
-            xDirection += 1;
         }
-        return new Point(MAX_BOARD_SIZE + 1, MAX_BOARD_SIZE + 1);
+        return tempListWithTargetedLegalMoves;
+    }
+
+    private void deleteUsedPointsFromParentList(List<List<Point>> listWithTargetedLegalMoves) {
+        for (int i = 0; i < listWithTargetedLegalMoves.size(); i++) {
+            if (legalMovesList.contains(listWithTargetedLegalMoves.get(i))) {
+                legalMovesList.remove(i);
+            }
+        }
+    }
+
+    public void changeLegalSlotToPlayerSlot(Slot slotValue, int y, int x, Player currentPlayer) {
+        setSlot(slotValue, y, x);
+        Point legalMovePoint = new Point(x, y);
+        changeEnemySlotsToCurrentPlayer(legalMovePoint, currentPlayer);
+    }
+
+    private void clearBoardFromEnemyLegalMoves() {
+        for (int i = 0; i < legalMovesList.size(); i++) {
+            if (getSlots()[getLegalMovesList().get(i).get(0).y][getLegalMovesList().get(i).get(0).x] == Slot.LEGAL_POSITION_P1 ||
+                    getSlots()[getLegalMovesList().get(i).get(0).y][getLegalMovesList().get(i).get(0).x] == Slot.LEGAL_POSITION_P2) {
+                getSlots()[getLegalMovesList().get(i).get(0).y][getLegalMovesList().get(i).get(0).x] = Slot.EMPTY;
+            }
+        }
     }
 
     public Slot[][] getSlots() {
         return slots;
     }
+
     public void setSlot(Slot slotValue, int y, int x) {
         slots[y][x] = slotValue;
+    }
+
+    public List<List<Point>> getLegalMovesList() {
+        return legalMovesList;
     }
 }

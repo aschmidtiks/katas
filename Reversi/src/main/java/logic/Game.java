@@ -1,5 +1,9 @@
 package logic;
 
+import gui.Panel;
+
+import javax.swing.*;
+
 public class Game {
 
     private Board board;
@@ -18,19 +22,17 @@ public class Game {
     public Turn getTurn() {
         return turn;
     }
-
     public Board getBoard() {
         return board;
     }
 
     private void runGame() {
         turn.setCurrentPlayer(Player.PLAYER1);
-        board.calcLegalMoves(turn.getCurrentPlayer());
+        board.calculateLegalMoves(turn.getCurrentPlayer());
     }
 
     public void nextRound() {
-        board.setSlotsForLogic();
         turn.setCurrentPlayer( turn.getCurrentPlayer() == Player.PLAYER1 ? Player.PLAYER2 : Player.PLAYER1);
-        board.calcLegalMoves(turn.getCurrentPlayer());
+        board.calculateLegalMoves(turn.getCurrentPlayer());
     }
 }
