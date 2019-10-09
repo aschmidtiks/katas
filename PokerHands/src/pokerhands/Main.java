@@ -120,11 +120,8 @@ public class Main {
                 }
             }
         }
-
         return 1;
     }
-
-
 
 
     public boolean isStraight(ArrayList<String> hand) {

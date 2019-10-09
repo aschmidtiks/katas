@@ -1,4 +1,4 @@
 
-ƒ"squid:ClassVariableVisibilityCheck"UMake pokerRank a static final constant or non-public and provide accessors if needed.(¥Ø»®
 ‘squid:S1319	"uThe type of the "pokerCards" object should be an interface such as "List" rather than the implementation "ArrayList".(„üÓüÿÿÿÿ
-1squid:S1220""Move this file to a named package.
+ƒ"squid:ClassVariableVisibilityCheck"UMake pokerRank a static final constant or non-public and provide accessors if needed.(¥Ø»®
+wsquid:S2293'"YReplace the type specification in this constructor call with the diamond operator ("<>").(ğŸš’8Šè‡»Í-
